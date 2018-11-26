@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF=8">
+    <title>はじめてのjQuery</title>
+    <script type="text/javascript" scr="https://code.jquery-3.2.1.minjs"></script>
+    <script type="text/javascript">
+    $(function(){
+        $("#toggle").on("click",function(){
+            $("#target").fadeToggle("slow");
+        });
+    });
+
+    </script>
+</head>
+<body>
+    <div id="target">表示・非表示される要素</div>
+    <button id="toggle">切り替え</button>
+</body>
+</html>
